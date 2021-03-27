@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Kingfisher
 
 class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var imageV: UIImageView!

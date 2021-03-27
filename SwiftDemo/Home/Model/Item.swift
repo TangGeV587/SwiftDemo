@@ -4,8 +4,6 @@
 //
 //  Created by hanghang on 2021/3/27.
 //
-import KakaJSON
-
 struct Item: Convertible {
     let thumb: String = ""
     let medium: String = ""

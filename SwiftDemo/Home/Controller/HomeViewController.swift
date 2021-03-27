@@ -6,10 +6,6 @@
 //
 
 import UIKit
-import MJRefresh
-import Alamofire
-import KakaJSON
-import SwiftyJSON
 
 class HomeViewController: UIViewController {
     
@@ -61,8 +57,8 @@ class HomeViewController: UIViewController {
             [weak self] response in
             guard let dict = response.result.value else {return}
             guard let jsons = JSON(dict)["items"].arrayObject else {return}
-          
-            let models = modelArray(from:jsons, Item.self)
+            let models = jsons.kj.modelArray(Item.self)
+//            let models = modelArray(from:jsons, Item.self)
             self?.items.append(contentsOf: models)
             self?.tableView.reloadData()
             self?.tableView.mj_footer?.endRefreshing()

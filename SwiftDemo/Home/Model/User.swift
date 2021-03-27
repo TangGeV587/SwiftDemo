@@ -5,8 +5,6 @@
 //  Created by hanghang on 2021/3/27.
 //
 
-import KakaJSON
-
 struct User:Convertible {
     
     let thumb: String = ""
