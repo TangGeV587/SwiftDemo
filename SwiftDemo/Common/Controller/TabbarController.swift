@@ -10,6 +10,7 @@ import UIKit
 class TabbarController: UITabBarController {
     override func viewDidLoad() {
     view.backgroundColor = UIColor.yellow
+    setValue(TabBar(), forKeyPath: "tabBar")
     addChildController()
     setupTabbarItem()
     }

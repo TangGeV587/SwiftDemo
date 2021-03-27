@@ -20,5 +20,4 @@ class StudyViewController: UIViewController {
         navigationItem.title = "学习"
         view.backgroundColor = UIColor.yellow
     }
-
 }
