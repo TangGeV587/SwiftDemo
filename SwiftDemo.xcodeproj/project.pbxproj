@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C16E10C2610B28000651FE1 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C16E10B2610B28000651FE1 /* Extension.swift */; };
+		4C16E1112610C10900651FE1 /* StudyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C16E1102610C10900651FE1 /* StudyViewController.xib */; };
 		4CBC8103260B4DDB007371BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC8102260B4DDB007371BC /* AppDelegate.swift */; };
 		4CBC8105260B4DDB007371BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC8104260B4DDB007371BC /* SceneDelegate.swift */; };
 		4CBC8107260B4DDB007371BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC8106260B4DDB007371BC /* ViewController.swift */; };
@@ -24,6 +25,16 @@
 		4CBC8194260EE356007371BC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC8193260EE356007371BC /* Item.swift */; };
 		4CBC8197260EE509007371BC /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC8196260EE509007371BC /* Comment.swift */; };
 		4CBC819A260EE57D007371BC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC8199260EE57D007371BC /* User.swift */; };
+		4CD432982611CF9B006F202C /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD432972611CF9B006F202C /* Const.swift */; };
+		4CD432AC2611D327006F202C /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD432AB2611D327006F202C /* MineViewController.xib */; };
+		4CD432AF2611D536006F202C /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD432AE2611D536006F202C /* FollowViewController.swift */; };
+		4CD432B22611D555006F202C /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD432B12611D555006F202C /* DiscoverViewController.swift */; };
+		4CD432B52611D586006F202C /* NearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD432B42611D586006F202C /* NearViewController.swift */; };
+		4CD432B82611DE7E006F202C /* DiscoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD432B72611DE7E006F202C /* DiscoverViewController.xib */; };
+		4CD432C82611FBFA006F202C /* WaterFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD432C72611FBFA006F202C /* WaterFlowController.swift */; };
+		4CD432CD2611FF7B006F202C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD432CC2611FF7B006F202C /* Model.swift */; };
+		4CD432D12611FFC1006F202C /* ImageUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD432CF2611FFC1006F202C /* ImageUICollectionViewCell.swift */; };
+		4CD432D22611FFC1006F202C /* ImageUICollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD432D02611FFC1006F202C /* ImageUICollectionViewCell.xib */; };
 		833C657611ACC9D589270292 /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B2FBC735C3FB111F75E882 /* Pods_SwiftDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +42,7 @@
 		03B2FBC735C3FB111F75E882 /* Pods_SwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A73E2E66754C985A02B334 /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		4C16E10B2610B28000651FE1 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		4C16E1102610C10900651FE1 /* StudyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudyViewController.xib; sourceTree = "<group>"; };
 		4CBC80FF260B4DDB007371BC /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBC8102260B4DDB007371BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CBC8104260B4DDB007371BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +62,16 @@
 		4CBC8196260EE509007371BC /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		4CBC8199260EE57D007371BC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4CBC819C260F1D24007371BC /* SwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		4CD432972611CF9B006F202C /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		4CD432AB2611D327006F202C /* MineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
+		4CD432AE2611D536006F202C /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
+		4CD432B12611D555006F202C /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		4CD432B42611D586006F202C /* NearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearViewController.swift; sourceTree = "<group>"; };
+		4CD432B72611DE7E006F202C /* DiscoverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverViewController.xib; sourceTree = "<group>"; };
+		4CD432C72611FBFA006F202C /* WaterFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFlowController.swift; sourceTree = "<group>"; };
+		4CD432CC2611FF7B006F202C /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4CD432CF2611FFC1006F202C /* ImageUICollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUICollectionViewCell.swift; sourceTree = "<group>"; };
+		4CD432D02611FFC1006F202C /* ImageUICollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageUICollectionViewCell.xib; sourceTree = "<group>"; };
 		F6943CD9BDBCC138393E9571 /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +151,7 @@
 		4CBC8122260E256C007371BC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				4CD432972611CF9B006F202C /* Const.swift */,
 				4CBC818B260ED84A007371BC /* View */,
 				4CBC8123260E257E007371BC /* Controller */,
 			);
@@ -195,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				4CBC817A260EC679007371BC /* StudyViewController.swift */,
+				4C16E1102610C10900651FE1 /* StudyViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -227,6 +251,12 @@
 			isa = PBXGroup;
 			children = (
 				4CBC817F260EC67A007371BC /* MineViewController.swift */,
+				4CD432AB2611D327006F202C /* MineViewController.xib */,
+				4CD432AE2611D536006F202C /* FollowViewController.swift */,
+				4CD432B12611D555006F202C /* DiscoverViewController.swift */,
+				4CD432B72611DE7E006F202C /* DiscoverViewController.xib */,
+				4CD432B42611D586006F202C /* NearViewController.swift */,
+				4CD432C72611FBFA006F202C /* WaterFlowController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -234,6 +264,7 @@
 		4CBC8180260EC67A007371BC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4CD432CC2611FF7B006F202C /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -241,6 +272,8 @@
 		4CBC8181260EC67A007371BC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4CD432CF2611FFC1006F202C /* ImageUICollectionViewCell.swift */,
+				4CD432D02611FFC1006F202C /* ImageUICollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -322,6 +355,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD432AC2611D327006F202C /* MineViewController.xib in Resources */,
+				4CD432B82611DE7E006F202C /* DiscoverViewController.xib in Resources */,
+				4C16E1112610C10900651FE1 /* StudyViewController.xib in Resources */,
+				4CD432D22611FFC1006F202C /* ImageUICollectionViewCell.xib in Resources */,
 				4CBC810F260B4DE0007371BC /* LaunchScreen.storyboard in Resources */,
 				4CBC8189260ED6C2007371BC /* HomeTableViewCell.xib in Resources */,
 				4CBC810C260B4DE0007371BC /* Assets.xcassets in Resources */,
@@ -379,18 +416,25 @@
 			files = (
 				4CBC819A260EE57D007371BC /* User.swift in Sources */,
 				4CBC818D260ED860007371BC /* TabBar.swift in Sources */,
+				4CD432B52611D586006F202C /* NearViewController.swift in Sources */,
 				4CBC8182260EC67A007371BC /* HomeViewController.swift in Sources */,
 				4CBC8107260B4DDB007371BC /* ViewController.swift in Sources */,
 				4CBC8125260E2629007371BC /* TabbarController.swift in Sources */,
 				4CBC8191260EE04E007371BC /* API.swift in Sources */,
 				4CBC8184260EC67A007371BC /* MineViewController.swift in Sources */,
+				4CD432AF2611D536006F202C /* FollowViewController.swift in Sources */,
 				4CBC8194260EE356007371BC /* Item.swift in Sources */,
 				4CBC8197260EE509007371BC /* Comment.swift in Sources */,
 				4C16E10C2610B28000651FE1 /* Extension.swift in Sources */,
+				4CD432B22611D555006F202C /* DiscoverViewController.swift in Sources */,
 				4CBC8103260B4DDB007371BC /* AppDelegate.swift in Sources */,
 				4CBC8183260EC67A007371BC /* StudyViewController.swift in Sources */,
+				4CD432CD2611FF7B006F202C /* Model.swift in Sources */,
 				4CBC8188260ED6C2007371BC /* HomeTableViewCell.swift in Sources */,
+				4CD432D12611FFC1006F202C /* ImageUICollectionViewCell.swift in Sources */,
+				4CD432C82611FBFA006F202C /* WaterFlowController.swift in Sources */,
 				4CBC8105260B4DDB007371BC /* SceneDelegate.swift in Sources */,
+				4CD432982611CF9B006F202C /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

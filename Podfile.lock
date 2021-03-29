@@ -1,0 +1,54 @@
+PODS:
+  - Alamofire (4.9.1)
+  - CHTCollectionViewWaterfallLayout/Swift (0.9.8)
+  - KakaJSON (1.1.2)
+  - Kingfisher (4.10.1)
+  - MJRefresh (3.5.0)
+  - RxCocoa (6.1.0):
+    - RxRelay (= 6.1.0)
+    - RxSwift (= 6.1.0)
+  - RxRelay (6.1.0):
+    - RxSwift (= 6.1.0)
+  - RxSwift (6.1.0)
+  - SwiftyJSON (5.0.0)
+  - XLPagerTabStrip (9.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - CHTCollectionViewWaterfallLayout/Swift
+  - KakaJSON
+  - Kingfisher
+  - MJRefresh
+  - RxCocoa
+  - RxSwift
+  - SwiftyJSON
+  - XLPagerTabStrip (~> 9.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - CHTCollectionViewWaterfallLayout
+    - KakaJSON
+    - Kingfisher
+    - MJRefresh
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SwiftyJSON
+    - XLPagerTabStrip
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  CHTCollectionViewWaterfallLayout: 5f241d2480ab4939aa0d1ad4981de9eef1fbe60d
+  KakaJSON: cc5ff50a8c1cfbb09413db8496cb709a209e6137
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
+  RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
+  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
+
+PODFILE CHECKSUM: b1e9dfbf5f086242c9fe556e2a680ad0c2dd7cfa
+
+COCOAPODS: 1.10.1
