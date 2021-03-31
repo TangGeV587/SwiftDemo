@@ -11,7 +11,7 @@ import XLPagerTabStrip
 
 class WaterFlowController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     var channelStr:String?
-    var collectionView = UICollectionView(frame:CGRect(), collectionViewLayout: UICollectionViewLayout())
+    var collectionView = UICollectionView(frame:.zero, collectionViewLayout: UICollectionViewLayout())
     let model = Model()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,7 +68,6 @@ class WaterFlowController: UIViewController, UICollectionViewDelegate, UICollect
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // Create the cell and return the cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ImageUICollectionViewCell
-        
         // Add image to cell
         cell.image.image = model.images[indexPath.row]
         return cell

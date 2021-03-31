@@ -22,9 +22,9 @@ class MineViewController: ButtonBarPagerTabStripViewController {
         view.backgroundColor = UIColor.systemPink
         navigationItem.title = "我的"
         containerView.bounces = false
-        DispatchQueue.main.async {
-            self.moveToViewController(at: 1, animated: false)
-        }
+//        DispatchQueue.main.async {
+//            self.moveToViewController(at: 1, animated: false)
+//        }
         changeCurrentIndexProgressive = { (oldCell: ButtonBarViewCell?, newCell: ButtonBarViewCell?, progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) -> Void in
             guard changeCurrentIndex == true else { return }
             

@@ -35,6 +35,8 @@
 		4CD432CD2611FF7B006F202C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD432CC2611FF7B006F202C /* Model.swift */; };
 		4CD432D12611FFC1006F202C /* ImageUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD432CF2611FFC1006F202C /* ImageUICollectionViewCell.swift */; };
 		4CD432D22611FFC1006F202C /* ImageUICollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD432D02611FFC1006F202C /* ImageUICollectionViewCell.xib */; };
+		4CD432F826133F3E006F202C /* UIview+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD432F726133F3E006F202C /* UIview+Extension.swift */; };
+		4CD432FB26135376006F202C /* UIColor+Exension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD432FA26135376006F202C /* UIColor+Exension.swift */; };
 		833C657611ACC9D589270292 /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B2FBC735C3FB111F75E882 /* Pods_SwiftDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +74,9 @@
 		4CD432CC2611FF7B006F202C /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4CD432CF2611FFC1006F202C /* ImageUICollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUICollectionViewCell.swift; sourceTree = "<group>"; };
 		4CD432D02611FFC1006F202C /* ImageUICollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageUICollectionViewCell.xib; sourceTree = "<group>"; };
+		4CD432D926120F99006F202C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		4CD432F726133F3E006F202C /* UIview+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIview+Extension.swift"; sourceTree = "<group>"; };
+		4CD432FA26135376006F202C /* UIColor+Exension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Exension.swift"; sourceTree = "<group>"; };
 		F6943CD9BDBCC138393E9571 /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				4C16E10B2610B28000651FE1 /* Extension.swift */,
+				4CD432F726133F3E006F202C /* UIview+Extension.swift */,
+				4CD432FA26135376006F202C /* UIColor+Exension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -339,6 +346,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 4CBC80F6260B4DDB007371BC;
 			productRefGroup = 4CBC8100260B4DDB007371BC /* Products */;
@@ -420,8 +428,10 @@
 				4CBC8182260EC67A007371BC /* HomeViewController.swift in Sources */,
 				4CBC8107260B4DDB007371BC /* ViewController.swift in Sources */,
 				4CBC8125260E2629007371BC /* TabbarController.swift in Sources */,
+				4CD432FB26135376006F202C /* UIColor+Exension.swift in Sources */,
 				4CBC8191260EE04E007371BC /* API.swift in Sources */,
 				4CBC8184260EC67A007371BC /* MineViewController.swift in Sources */,
+				4CD432F826133F3E006F202C /* UIview+Extension.swift in Sources */,
 				4CD432AF2611D536006F202C /* FollowViewController.swift in Sources */,
 				4CBC8194260EE356007371BC /* Item.swift in Sources */,
 				4CBC8197260EE509007371BC /* Comment.swift in Sources */,
@@ -445,6 +455,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				4CBC810E260B4DE0007371BC /* Base */,
+				4CD432D926120F99006F202C /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -456,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -517,6 +529,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
