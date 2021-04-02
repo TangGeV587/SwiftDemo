@@ -37,6 +37,10 @@
 		4CD432D22611FFC1006F202C /* ImageUICollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD432D02611FFC1006F202C /* ImageUICollectionViewCell.xib */; };
 		4CD432F826133F3E006F202C /* UIview+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD432F726133F3E006F202C /* UIview+Extension.swift */; };
 		4CD432FB26135376006F202C /* UIColor+Exension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD432FA26135376006F202C /* UIColor+Exension.swift */; };
+		4CD4334126144EBE006F202C /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4334026144EBE006F202C /* TestViewController.swift */; };
+		4CD433642614BB83006F202C /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD433632614BB83006F202C /* TestViewController.xib */; };
+		4CD433682614BD62006F202C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD433672614BD62006F202C /* Post.swift */; };
+		4CD4336B2615EF4D006F202C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4336A2615EF4D006F202C /* NetworkManager.swift */; };
 		833C657611ACC9D589270292 /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B2FBC735C3FB111F75E882 /* Pods_SwiftDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +81,10 @@
 		4CD432D926120F99006F202C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		4CD432F726133F3E006F202C /* UIview+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIview+Extension.swift"; sourceTree = "<group>"; };
 		4CD432FA26135376006F202C /* UIColor+Exension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Exension.swift"; sourceTree = "<group>"; };
+		4CD4334026144EBE006F202C /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		4CD433632614BB83006F202C /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		4CD433672614BD62006F202C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		4CD4336A2615EF4D006F202C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		F6943CD9BDBCC138393E9571 /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +139,7 @@
 		4CBC8101260B4DDB007371BC /* SwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4CD4333C26144E7A006F202C /* Test */,
 				4C16E10A2610B1FC00651FE1 /* Utils */,
 				4CBC8173260EC679007371BC /* Home */,
 				4CBC817D260EC67A007371BC /* Mine */,
@@ -161,6 +170,7 @@
 				4CD432972611CF9B006F202C /* Const.swift */,
 				4CBC818B260ED84A007371BC /* View */,
 				4CBC8123260E257E007371BC /* Controller */,
+				4CD4336A2615EF4D006F202C /* NetworkManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -293,6 +303,40 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		4CD4333C26144E7A006F202C /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				4CD4333F26144E9E006F202C /* Model */,
+				4CD4333E26144E97006F202C /* View */,
+				4CD4333D26144E8D006F202C /* Controller */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		4CD4333D26144E8D006F202C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4CD4334026144EBE006F202C /* TestViewController.swift */,
+				4CD433632614BB83006F202C /* TestViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4CD4333E26144E97006F202C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4CD4333F26144E9E006F202C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4CD433672614BD62006F202C /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4D132F7268C4E82634CC3B93 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +413,7 @@
 				4CD432D22611FFC1006F202C /* ImageUICollectionViewCell.xib in Resources */,
 				4CBC810F260B4DE0007371BC /* LaunchScreen.storyboard in Resources */,
 				4CBC8189260ED6C2007371BC /* HomeTableViewCell.xib in Resources */,
+				4CD433642614BB83006F202C /* TestViewController.xib in Resources */,
 				4CBC810C260B4DE0007371BC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,11 +476,14 @@
 				4CD432FB26135376006F202C /* UIColor+Exension.swift in Sources */,
 				4CBC8191260EE04E007371BC /* API.swift in Sources */,
 				4CBC8184260EC67A007371BC /* MineViewController.swift in Sources */,
+				4CD433682614BD62006F202C /* Post.swift in Sources */,
 				4CD432F826133F3E006F202C /* UIview+Extension.swift in Sources */,
+				4CD4334126144EBE006F202C /* TestViewController.swift in Sources */,
 				4CD432AF2611D536006F202C /* FollowViewController.swift in Sources */,
 				4CBC8194260EE356007371BC /* Item.swift in Sources */,
 				4CBC8197260EE509007371BC /* Comment.swift in Sources */,
 				4C16E10C2610B28000651FE1 /* Extension.swift in Sources */,
+				4CD4336B2615EF4D006F202C /* NetworkManager.swift in Sources */,
 				4CD432B22611D555006F202C /* DiscoverViewController.swift in Sources */,
 				4CBC8103260B4DDB007371BC /* AppDelegate.swift in Sources */,
 				4CBC8183260EC67A007371BC /* StudyViewController.swift in Sources */,

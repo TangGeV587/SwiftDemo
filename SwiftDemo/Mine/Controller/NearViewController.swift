@@ -22,8 +22,8 @@ class NearViewController: UIViewController,IndicatorInfoProvider {
 
     
     //MARK: - lazy
-    lazy var button:Button = {
-        let button = Button(type: .custom)
+    lazy var button:UIButton = {
+        let button = UIButton(type: .custom)
         button.setTitle("加油", for: .normal)
         button.setTitleColor(UIColor(hexColor:"#ff0000"), for: .normal)
         button.sizeToFit()
@@ -33,7 +33,6 @@ class NearViewController: UIViewController,IndicatorInfoProvider {
     }()
     
     @objc func clickAction(sender:UIButton){
-        
         print("奥利给")
     }
     

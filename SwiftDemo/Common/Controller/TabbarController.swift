@@ -9,7 +9,6 @@ import UIKit
 
 class TabbarController: UITabBarController {
     override func viewDidLoad() {
-    view.backgroundColor = UIColor.yellow
     setValue(TabBar(), forKeyPath: "tabBar")
     addChildController()
     setupTabbarItem()
@@ -18,6 +17,7 @@ class TabbarController: UITabBarController {
     
     
     func addChildController()  {
+        getChildController(titleStr: "测试", imageName: "icon_main", selectImageName: "icon_main_active", type: TestViewController.self)
         getChildController(titleStr: "首页", imageName: "icon_main", selectImageName: "icon_main_active", type: HomeViewController.self)
         getChildController(titleStr: "学习", imageName: "main_tab_live", selectImageName: "main_tab_live_active", type: StudyViewController.self)
         getChildController(titleStr: "我的", imageName: "main_tab_qbfriends", selectImageName: "main_tab_qbfriends_active", type: MineViewController.self)

@@ -5,7 +5,7 @@
 //  Created by hanghang on 2021/3/30.
 //
 
-import Foundation
+import UIKit
 
 /// 给扩展类继承协议实现前缀功能
 //extension UIView:MJCompatible {}
@@ -22,7 +22,7 @@ import Foundation
 //    }
 //}
 
-extension View {
+extension UIView {
     @IBInspectable
     var cornerRadius:CGFloat {
         get {

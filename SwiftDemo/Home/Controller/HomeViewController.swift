@@ -38,31 +38,43 @@ class HomeViewController: UIViewController {
     }
     
     func loadNewData() {
-        request(API.imgrank,parameters: ["page":1,"count":1]).responseJSON {
+        AF.request(API.imgrank,parameters: ["page":1,"count":1]).responseJSON {
             [weak self] response in
-            guard let dict = response.result.value else {return}
-            guard let jsons = JSON(dict)["items"].arrayObject else {return}
-          
-            let models = modelArray(from:jsons, Item.self)
-            self?.items.removeAll()
-            self?.items.append(contentsOf: models)
-            self?.tableView.reloadData()
-            self?.tableView.mj_header?.endRefreshing()
-            self?.page = 1
+            switch response.result {
+            case let .success(data):
+//                guard let dict = data else {return}
+                guard let jsons = JSON(data)["items"].arrayObject else {return}
+              
+                let models = modelArray(from:jsons, Item.self)
+                self?.items.removeAll()
+                self?.items.append(contentsOf: models)
+                self?.tableView.reloadData()
+                self?.tableView.mj_header?.endRefreshing()
+                self?.page = 1
+            case let .failure(error):
+                print(error.errorDescription as Any)
+
+            }
         }
     }
     
     func loadMoreData() {
-        request(API.imgrank, parameters: ["page": page + 1]).responseJSON {
+        AF.request(API.imgrank, parameters: ["page": page + 1]).responseJSON {
             [weak self] response in
-            guard let dict = response.result.value else {return}
-            guard let jsons = JSON(dict)["items"].arrayObject else {return}
-            let models = jsons.kj.modelArray(Item.self)
-//            let models = modelArray(from:jsons, Item.self)
-            self?.items.append(contentsOf: models)
-            self?.tableView.reloadData()
-            self?.tableView.mj_footer?.endRefreshing()
-            self?.page += 1
+            switch response.result {
+            case let .success(data):
+//                guard let dict = data else {return}
+                guard let jsons = JSON(data)["items"].arrayObject else {return}
+                let models = jsons.kj.modelArray(Item.self)
+                self?.items.append(contentsOf: models)
+                self?.tableView.reloadData()
+                self?.tableView.mj_footer?.endRefreshing()
+                self?.page += 1
+            case let .failure(error):
+                print(error.errorDescription as Any)
+
+            }
+            
         }
     }
 }
@@ -75,7 +87,8 @@ extension HomeViewController :UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.cellID) as! HomeTableViewCell
         let item = self.items[indexPath.row]
-        cell.initailData(item: item)
+        cell.item = item
+//        cell.initailData(item: item)
         return cell
     }
 }
