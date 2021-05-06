@@ -37,7 +37,7 @@ class StudyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        test9()
+        test5()
     }
     
     func setupUI() {
@@ -94,7 +94,10 @@ class StudyViewController: UIViewController {
     
     func test5()  {
         buttonn.rx.controlEvent(.touchUpInside).subscribe(onNext:{
-            print("按钮被点击了")
+//            print("按钮被点击了")
+            
+            MBProgressHUD.showMessage(msg: "弹框啊。。。")
+            
         }).disposed(by: bag)
     
     }

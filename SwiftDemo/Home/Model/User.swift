@@ -17,5 +17,4 @@ struct User:Convertible {
         if property.name == "name" { return "login" }
         return property.name
     }
-    
 }

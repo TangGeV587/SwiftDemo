@@ -11,11 +11,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 //    var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-      
-        print("ssdd443".mj.numberCount)
-        String.mj.run()
-        
-        
+        print("1".cachePath())
+        print("2".documentPath())
+//        print("ssdd443".mj.numberCount)
+//        String.mj.run()
         return true
     }
 

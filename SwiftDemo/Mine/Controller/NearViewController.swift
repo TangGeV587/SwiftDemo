@@ -25,7 +25,7 @@ class NearViewController: UIViewController,IndicatorInfoProvider {
     lazy var button:UIButton = {
         let button = UIButton(type: .custom)
         button.setTitle("加油", for: .normal)
-        button.setTitleColor(UIColor(hexColor:"#ff0000"), for: .normal)
+        button.setTitleColor(UIColor.hexString("#ff0000"), for: .normal)
         button.sizeToFit()
         button.origin = CGPoint(x: 100, y: 100)
         button.addTarget(self, action: #selector(clickAction(sender:)), for: .touchUpInside)
