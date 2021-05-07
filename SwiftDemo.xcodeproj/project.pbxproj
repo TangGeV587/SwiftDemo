@@ -60,6 +60,11 @@
 		4CD4344D261DE5B7006F202C /* TestModelController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4344B261DE5B7006F202C /* TestModelController.xib */; };
 		4CD4344E261DE5B7006F202C /* TestModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4344C261DE5B7006F202C /* TestModelController.swift */; };
 		833C657611ACC9D589270292 /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B2FBC735C3FB111F75E882 /* Pods_SwiftDemo.framework */; };
+		B51411BB26441CEA002CA72D /* TransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51411B926441CEA002CA72D /* TransitionController.swift */; };
+		B51411BC26441CEA002CA72D /* TransitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B51411BA26441CEA002CA72D /* TransitionViewController.xib */; };
+		B51411BF26441DCB002CA72D /* TransitionDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51411BD26441DCB002CA72D /* TransitionDetailController.swift */; };
+		B51411C026441DCB002CA72D /* TransitionDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B51411BE26441DCB002CA72D /* TransitionDetailController.xib */; };
+		B51411C226441FB9002CA72D /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51411C126441FB9002CA72D /* NavigationController.swift */; };
 		B53BB7B72617512F0033DBAB /* NewfeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53BB7B62617512F0033DBAB /* NewfeatureViewController.swift */; };
 		B54CBF7E26242B35006212BD /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54CBF7D26242B35006212BD /* HttpError.swift */; };
 		B59B7CBB261831CB00ACE6B0 /* WBlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59B7CBA261831CB00ACE6B0 /* WBlist.swift */; };
@@ -155,6 +160,11 @@
 		4CD43448261DE1E5006F202C /* BliBli.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BliBli.swift; sourceTree = "<group>"; };
 		4CD4344B261DE5B7006F202C /* TestModelController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestModelController.xib; sourceTree = "<group>"; };
 		4CD4344C261DE5B7006F202C /* TestModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestModelController.swift; sourceTree = "<group>"; };
+		B51411B926441CEA002CA72D /* TransitionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionController.swift; sourceTree = "<group>"; };
+		B51411BA26441CEA002CA72D /* TransitionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransitionViewController.xib; sourceTree = "<group>"; };
+		B51411BD26441DCB002CA72D /* TransitionDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionDetailController.swift; sourceTree = "<group>"; };
+		B51411BE26441DCB002CA72D /* TransitionDetailController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransitionDetailController.xib; sourceTree = "<group>"; };
+		B51411C126441FB9002CA72D /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		B53BB7B62617512F0033DBAB /* NewfeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewfeatureViewController.swift; sourceTree = "<group>"; };
 		B54CBF7D26242B35006212BD /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
 		B59B7CBA261831CB00ACE6B0 /* WBlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBlist.swift; sourceTree = "<group>"; };
@@ -294,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				4CBC8124260E2629007371BC /* TabbarController.swift */,
+				B51411C126441FB9002CA72D /* NavigationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -356,6 +367,10 @@
 			children = (
 				4CBC817A260EC679007371BC /* StudyViewController.swift */,
 				4C16E1102610C10900651FE1 /* StudyViewController.xib */,
+				B51411B926441CEA002CA72D /* TransitionController.swift */,
+				B51411BA26441CEA002CA72D /* TransitionViewController.xib */,
+				B51411BD26441DCB002CA72D /* TransitionDetailController.swift */,
+				B51411BE26441DCB002CA72D /* TransitionDetailController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -643,6 +658,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CD432AC2611D327006F202C /* MineViewController.xib in Resources */,
+				B51411BC26441CEA002CA72D /* TransitionViewController.xib in Resources */,
 				4CD432B82611DE7E006F202C /* DiscoverViewController.xib in Resources */,
 				4C16E1112610C10900651FE1 /* StudyViewController.xib in Resources */,
 				4CD432D22611FFC1006F202C /* ImageUICollectionViewCell.xib in Resources */,
@@ -654,6 +670,7 @@
 				4CCC0F95261F012D0012EA77 /* lsjy_pass_rsa_public_key.pem in Resources */,
 				B59B7CF626189F1900ACE6B0 /* ImageCell.xib in Resources */,
 				4CBC8189260ED6C2007371BC /* HomeTableViewCell.xib in Resources */,
+				B51411C026441DCB002CA72D /* TransitionDetailController.xib in Resources */,
 				4C7720332622A93B00006180 /* private_key.p12 in Resources */,
 				4CD4344D261DE5B7006F202C /* TestModelController.xib in Resources */,
 				4C7720342622A93B00006180 /* public_key.der in Resources */,
@@ -719,6 +736,7 @@
 				4CD432B52611D586006F202C /* NearViewController.swift in Sources */,
 				4CD43449261DE1E5006F202C /* BliBli.swift in Sources */,
 				4CBC8182260EC67A007371BC /* HomeViewController.swift in Sources */,
+				B51411C226441FB9002CA72D /* NavigationController.swift in Sources */,
 				B5FEC330261C418A00F55C82 /* ETPopupView.swift in Sources */,
 				4C77202A261F563600006180 /* RSA.m in Sources */,
 				B5E6B8C92617778F0077AB06 /* SystemInfo.swift in Sources */,
@@ -733,6 +751,7 @@
 				B59B7CFD261959D300ACE6B0 /* UILabel-Extension.swift in Sources */,
 				4CD432FB26135376006F202C /* UIColor+Exension.swift in Sources */,
 				B59B7D0F26195CA400ACE6B0 /* Bundle+Extension.swift in Sources */,
+				B51411BB26441CEA002CA72D /* TransitionController.swift in Sources */,
 				B59B7D48261AB9D500ACE6B0 /* MBProgress+Extension.swift in Sources */,
 				B5FEC334261C44DF00F55C82 /* ShowView.swift in Sources */,
 				B59B7D7B261C0E5600ACE6B0 /* UIBarButtonItem+Extension.swift in Sources */,
@@ -768,6 +787,7 @@
 				B59B7D74261C068D00ACE6B0 /* UICollectionView+Extension.swift in Sources */,
 				4CD43445261DD770006F202C /* AlertViewController.swift in Sources */,
 				B59B7CFA2619594500ACE6B0 /* UIFont-Extension.swift in Sources */,
+				B51411BF26441DCB002CA72D /* TransitionDetailController.swift in Sources */,
 				B59B7CF12618956600ACE6B0 /* AppConstant.swift in Sources */,
 				4CD432D12611FFC1006F202C /* ImageUICollectionViewCell.swift in Sources */,
 				4CD432C82611FBFA006F202C /* WaterFlowController.swift in Sources */,

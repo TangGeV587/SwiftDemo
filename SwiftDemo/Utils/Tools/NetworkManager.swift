@@ -122,11 +122,12 @@ struct NetworkingRequest {
             completation(0,handleError(response as! AFError))
         }else {
             let dict = JSON(response).dictionaryObject!
-            let code = (dict["err"] ?? dict["code"]) as! Int
+            
+            let code = ((dict["err"] ?? dict["code"]) ?? -1) as! Int
             if code == 0 || code == 200 {
                 completation(code, response)
             }else {
-                let desc = dict["message"] as? String ?? ""
+                let desc = dict["message"] as? String ?? "报错了"
                 completation(code,HttpError(code: code, desc: desc))
             }
         }

@@ -15,7 +15,6 @@ class TabbarController: UITabBarController {
     }
     
     
-    
     func addChildController()  {
         getChildController(titleStr: "测试", imageName: "icon_main", selectImageName: "icon_main_active", type: TestViewController.self)
         getChildController(titleStr: "首页", imageName: "icon_main", selectImageName: "icon_main_active", type: HomeViewController.self)
@@ -24,7 +23,7 @@ class TabbarController: UITabBarController {
     }
     
     func getChildController(titleStr: String,imageName: String,selectImageName: String,type: UIViewController.Type) {
-        let homeVC = UINavigationController(rootViewController: type.init())
+        let homeVC = NavigationController(rootViewController: type.init())
         homeVC.title = titleStr
         homeVC.tabBarItem.image = UIImage(named: imageName)?.withRenderingMode(.alwaysOriginal)
         homeVC.tabBarItem.selectedImage = UIImage(named: selectImageName)

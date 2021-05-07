@@ -50,7 +50,7 @@ class TestViewController: UIViewController {
             self?.dataArray.append(contentsOf:modelsArray)
             self?.tableView.reloadData()
         }else {
-            let error = response as! NSError
+            let error = response as! HttpError
             self?.showErrorMsg(error.localizedDescription)
         }
 
